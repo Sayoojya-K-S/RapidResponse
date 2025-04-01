@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "348225839066",
+    "firebase_url": "https://rapid-response-2025-default-rtdb.firebaseio.com",
+    "project_id": "rapid-response-2025",
+    "storage_bucket": "rapid-response-2025.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348225839066:android:4b9888323a926060736ae3",
+        "android_client_info": {
+          "package_name": "com.example.rapidresponse"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK8_djMBiAv23SyXH_4gENKEK9w34FTx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348225839066:android:283577a9dfb27b04736ae3",
+        "android_client_info": {
+          "package_name": "com.example.volunteerregistrationsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK8_djMBiAv23SyXH_4gENKEK9w34FTx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

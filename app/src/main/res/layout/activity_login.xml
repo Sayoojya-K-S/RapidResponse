@@ -30,7 +30,7 @@
             android:src="@drawable/baseline_3p_24" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Email"
@@ -63,7 +63,7 @@
             android:src="@drawable/baseline_lock_24" />
 
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/login_password"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
@@ -95,4 +95,29 @@
         android:textSize="18dp"
         android:textColor="#F6F3F3"
         android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:text="Don't have an account? " />
+
+        <TextView
+            android:id="@+id/textViewsignup"
+            android:layout_width="77dp"
+            android:layout_height="48dp"
+            android:text="Sign Up"
+            android:textColor="#78EBDF" />
+    </LinearLayout>
 </LinearLayout>
