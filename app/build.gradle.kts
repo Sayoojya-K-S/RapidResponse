@@ -46,6 +46,15 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
 
+    implementation(libs.glide)
+    annotationProcessor(libs.glide.compiler)
+    implementation(libs.gson)
+    implementation(libs.recyclerview)
+    implementation(libs.cardview)
+    implementation(libs.retrofit)         // Retrofit Core
+    implementation(libs.retrofit.gson)    // Gson Converter for JSON Parsing
+    implementation(libs.okhttp.logging)   // Logging Interceptor for Debugging
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
