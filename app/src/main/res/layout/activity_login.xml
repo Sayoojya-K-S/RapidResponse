@@ -34,11 +34,9 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:hint="Email"
-
             android:textColorHint="#EEEEEE"
             android:textColor="#FFFFFF"
             android:padding="10dp"
-            android:background="@android:color/transparent"
             android:inputType="textEmailAddress"/>
     </LinearLayout>
 
@@ -109,6 +107,7 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/dont"
             android:layout_width="wrap_content"
             android:layout_height="48dp"
             android:text="Don't have an account? " />

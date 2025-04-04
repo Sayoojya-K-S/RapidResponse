@@ -20,6 +20,7 @@ cardview = "1.0.0"
 retrofit = "2.9.0"
 retrofit-gson = "2.9.0"
 okhttp-logging = "4.9.3"
+play_services_location = "21.0.1"
 
 [libraries]
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -43,6 +44,7 @@ cardview = { group = "androidx.cardview", name = "cardview", version.ref = "card
 retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
 retrofit-gson = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit-gson" }
 okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp-logging" }
+play_services_location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "play_services_location" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

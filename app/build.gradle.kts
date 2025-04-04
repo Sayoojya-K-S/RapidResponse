@@ -54,6 +54,8 @@ dependencies {
     implementation(libs.retrofit)         // Retrofit Core
     implementation(libs.retrofit.gson)    // Gson Converter for JSON Parsing
     implementation(libs.okhttp.logging)   // Logging Interceptor for Debugging
+    implementation(libs.play.services.location)
+
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

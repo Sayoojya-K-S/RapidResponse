@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -28,6 +29,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Home_Activity extends AppCompatActivity {
     RecyclerView recyclerView;
+    private DrawerLayout drawerLayout;
     NewsAdapter adapter;
     String API_KEY = "2811496b0ab9407680544d97e570dde3";
     String BASE_URL = "https://newsapi.org/v2/";

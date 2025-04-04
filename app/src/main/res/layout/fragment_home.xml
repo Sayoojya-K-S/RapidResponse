@@ -1,70 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_Activity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
 
-    <!-- Top Section -->
-    <LinearLayout
-        android:id="@+id/linear1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:gravity="center_vertical"
-        android:background="#D1C8C8"
-        android:orientation="horizontal">
-
-
-        <!-- App Logo -->
-        <ImageView
-            android:id="@+id/ivLogo"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:src="@drawable/logo"
-            android:contentDescription="App Logo"
-            android:layout_marginEnd="8dp" />
-
-        <!-- App Name -->
-        <TextView
-            android:id="@+id/tvAppName"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Rapid Response"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black" />
-
-        <ImageView
-            android:id="@+id/notification_icon"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:src="@drawable/logout_icon"
-            android:layout_alignParentEnd="true"
-            android:contentDescription="Notifications"
-            android:layout_marginEnd="10dp" />
-
-        <ImageView
-            android:id="@+id/profile_icon"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/baseline_account_circle_24"
-            android:layout_toStartOf="@id/notification_icon"
-            android:contentDescription="Profile"
-            android:layout_marginEnd="16dp" />
-
-    </LinearLayout>
+    <!-- Scrollable Content -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:padding="10dp">
+
+            <!-- Banner Section -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -97,6 +50,7 @@
                     android:src="@drawable/baseline_account_circle_24" />
             </LinearLayout>
 
+            <!-- Nearby Disaster Updates -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -112,7 +66,8 @@
                     android:textStyle="bold"
                     android:textColor="@color/black" />
             </LinearLayout>
-            <!-- Emergency Features Grid -->
+
+            <!-- RecyclerView for News -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/feature_recycler"
                 android:layout_width="match_parent"
@@ -124,17 +79,5 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation Bar -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:labelVisibilityMode="labeled"
-        app:elevation="8dp"
-        android:layout_gravity="bottom"
-        android:background="?android:attr/windowBackground"
-        app:itemIconTint="@color/selector_bottom_nav"
-        app:itemTextColor="@color/selector_bottom_nav"
-        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
